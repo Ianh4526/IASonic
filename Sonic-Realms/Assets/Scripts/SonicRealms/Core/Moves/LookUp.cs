@@ -31,7 +31,10 @@ namespace SonicRealms.Core.Moves
 
         public override bool ShouldPerform
         {
-            get { return Input.GetAxis(ActivateAxis) > 0f; }
+            get {
+                return VarAuto.AutoUp;
+                    //Input.GetAxis(ActivateAxis) > 0f;
+            }
         }
 
         public override bool ShouldEnd

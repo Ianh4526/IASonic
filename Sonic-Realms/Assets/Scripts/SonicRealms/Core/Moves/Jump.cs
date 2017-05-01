@@ -71,7 +71,9 @@ namespace SonicRealms.Core.Moves
         {
             get {//directo con el input y si se desea cambiar pues el return tiene q ser o true para saltar o false para no saltar
                 if (Input.GetButtonDown(ActivateButton)== true) { Debug.Log("jjump"); }
-                return Input.GetButtonDown(ActivateButton); }
+                return VarAuto.AutoJump;
+                //Input.GetButtonDown(ActivateButton);
+            }
         }
 
         public override bool ShouldEnd

@@ -247,7 +247,7 @@ namespace SonicRealms.Core.Moves
                 Debug.Log("Correr Derecha"); }
             else if (_axis == -1) { Debug.Log("Correr Izquierda"); } 
             if (ControlLockTimerOn || DisableControl) return;
-            _axis = VarAuto.VarAutoMov;
+            _axis = VarAuto.VarAutoMovG;
             //InvertAxis ? -Input.GetAxis(MovementAxis) : Input.GetAxis(MovementAxis);
             //System.IO.File.WriteAllText(@"C:\Users\ian45\Documents\WriteText.txt", "\n Correr Derecha\n");
 

@@ -133,7 +133,9 @@ namespace SonicRealms.Core.Moves
 
         public override bool ShouldPerform
         {
-            get { return Input.GetButtonDown(ChargeButton); }
+            get { return VarAuto.AutoDash;
+                //Input.GetButtonDown(ChargeButton); //no esta funcionando
+            }
         }
 
         public override void OnActiveEnter(State previousState)

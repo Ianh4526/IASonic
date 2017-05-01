@@ -172,7 +172,10 @@ namespace SonicRealms.Core.Moves
 
         public override bool ShouldPerform
         {
-            get { return Input.GetAxisRaw(ActivateAxis) == (RequireNegative ? -1f : 1f); }
+            get {
+                return VarAuto.AutoRoll;
+                    //Input.GetAxisRaw(ActivateAxis) == (RequireNegative ? -1f : 1f);
+            }
         }
 
         public override void SetAnimatorParameters()

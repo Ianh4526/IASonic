@@ -94,7 +94,8 @@ namespace SonicRealms.Core.Moves
         public override void OnActiveUpdate()
         {
             if (ControlLock) _axis = 0.0f;
-            else _axis = InvertAxis ? -Input.GetAxis(MovementAxis) : Input.GetAxis(MovementAxis);
+            else _axis = VarAuto.VarAutoMovA;
+                    //InvertAxis ? -Input.GetAxis(MovementAxis) : Input.GetAxis(MovementAxis);
 
             if (DMath.Equalsf(_axis)) return;
             Controller.FacingForward = _axis > 0.0f;

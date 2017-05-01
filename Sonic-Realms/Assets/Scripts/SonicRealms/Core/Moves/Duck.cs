@@ -62,7 +62,9 @@ namespace SonicRealms.Core.Moves
 
         public override bool ShouldPerform
         {
-            get { return CheckAxis(); }
+            get { return VarAuto.AutoDuck;
+                //CheckAxis(); 
+            }
         }
 
         public override bool ShouldEnd
